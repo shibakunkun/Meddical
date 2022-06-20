@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+:root {
+    --primary-color: #1F2B6C;
+    --secondary-color: #159EEC;
+    --accent-color: #BFD2F8;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+.layout {
+    padding: 0 15%;
+}
+
+header {
+    overflow: hidden;
+}
+
+.header-top {
+    height: 80px;
+    font-family: "Yeseva One";
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top div:last-child span {
+    padding: 0 4px;
+}
+
+.header-bot {
+    height: 80px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.header-bot ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header-bot li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn {
+    background: #BFD2F8;
+    border-radius: 50px;
+    padding: 13px 35px;
+    font-size: 16px;
+    color: var(--primary-color);
+    font-family: 'Work Sans', sans-serif;
+    margin-left: 30px;
+}
+
+#banner .background {
+    width: 100%;
+    height: calc(100vh - 160px);
+    background-color: #E5E4E8;
+    z-index: -999;
+    overflow: hidden;
+}
+
+#banner img {
+    height: calc(100vh - 160px);
+    background: url(../picture/Physician_Trends_2021_Merritt_Hawkins\ 1.png);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+#banner .content {
+    position: absolute;
+    top: 45%;
+    z-index: 999;
+}
+
+#appointment {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20%;
+}
+
+#appointment button {
+    width: 350px;
+    height: 100px;
+    font-family: "Work Sans", sans-serif;
+    color: white;
+    line-height: 100px;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#welcome {
+    height: 210px;
+}
+
+#welcome .welcome-content {
+    text-align: center;
+}
+
+.welcome-content div {
+    padding: 4px 0;
+}
+
+#services {
+    padding-bottom: 64px;
+}
+
+#services .caption {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+#services .title {
+    height: 484px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #999;
+    width: 20%;
+    float: left;
+}
+
+#services .title div {
+    height: 110px;
+    padding-top: 5%;
+}
+
+#services .content-title ul {
+    padding: 24px 24px 32px 0;
+}
+
+#services .content-title ul li {
+    font-family: 'Work sans', sans-serif;
+    font-size: 22px;
+    list-style: none;
+    line-height: 140%;
+}
+
+#special .title {
+    text-align: center;
+}
+
+#special .table {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 0 25%;
+    margin-bottom: 64px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 110px;
+    line-height: 50px;
+}
+
+.grid-item div {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+}
+
+.grid-item img {
+    transform: translateY(50%);
+}
+
+#book {
+    position: relative;
+    padding-bottom: 64px;
+}
+
+#book img {
+    opacity: .5;
+}
+
+#book .container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    padding: 0 25%;
+    align-items: center;
+}
+
+#book .grid-container {
+    display: grid;
+    grid-template-columns: 245px 245px;
+    padding: 84px 0;
+    transform: translateX(30%);
+}
+
+#book .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0.3px solid white;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: left;
+}
+
+#book .message {
+    grid-column: 1/3;
+    height: 200px;
+}
+
+#book .submit {
+    grid-column: 1/3;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+}
+
+#doctor .title {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+#doctor .title div:first-child {
+    font-family: "Work Sans", sans-serif;
+    font-size: 24px;
+    color: var(--secondary-color);
+    line-height: 20px;
+    padding-bottom: 8px;
+}
+
+#doctor .title div:last-child {
+    font-family: "Yeseva One";
+    font-size: 36px;
+    color: var(--primary-color);
+    line-height: 36px;
+}
+
+#doctor .content {
+    display: flex;
+    padding: 0 25%;
+}
+
+#doctor .content .item {
+    padding: 0 8px;
+}
+
+#doctor .content .infor {
+    background-color: var(--accent-color);
+    text-align: center;
+    transform: translateY(-4px);
+    padding: 20px 0;
+}
+
+#doctor .content .infor div:first-child {
+    font-family: "work sans", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--primary-color);
+}
+
+#doctor .content .infor div:nth-child(2) {
+    font-family: "work sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 21px;
+    color: var(--primary-color);
+    letter-spacing: 0.16em;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+
+#doctor .content .infor img {
+    background: var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+#doctor .content .profile {
+    text-align: center;
+    background-color: var(--primary-color);
+    transform: translateY(-4px);
+    font-family: "work sans", sans-serif;
+    font-size: 16px;
+    color: var(--accent-color);
+    padding: 12px 0;
+    border-radius: 0 0 5px 5px;
+}
+
+#contact .title {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+#contact .title>div:first-child {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 21px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+#contact .title>div:last-child {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+#contact .item {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 25%;
+    margin-bottom: 64px;
+}
+
+#contact .item>div {
+    background-color: var(--accent-color);
+    width: 233px;
+    height: 200px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#contact .item>div>div {
+    padding-top: 33px;
+    padding-left: 30px;
+}
+
+#footer {
+    padding: 0 15%;
+    background-color: var(--primary-color);
+}
+
+#footer .top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+#footer .top div:first-child {
+    padding-bottom: 36px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+#footer .top div:last-child {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+#footer .top input {
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+}
+
+#footer .bot {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 72px;
+}
+
+#footer .bot div:first-child {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+#footer .bot div:last-child img {
+    padding: 0 4px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    display: none;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.header-bot input{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .layout {
+        padding: 0 10%;
+    }
+
+    .header-top {
+        font-size: 12px;
+    }
+    .header-bot ul li {
+        display: block;
+    }
+    .icon{
+        display: block;
+    }
+    .header-bot ul {
+        position: fixed;
+        width: 100%;
+        height: 30vh;
+        top: 160px;
+        text-align: center;
+        transition: all .5s;
+        background-color:var(--accent-color);
+        z-index: 9999;
+        width: 100%;
+        left: -100%;
+    }
+    .header-bot ul li{
+        color: black;
+        padding: 0 10%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 24px;
+        color: var(--primary-color);
+    }
+    .checkbtn {
+        display: block;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }    
+
+
+    .icon {
+        display: block;
+        float: left;
+    }
+
+    #banner .background {
+        width: 100%;
+        height: 85%;
+        background-color: #E5E4E8;
+        z-index: -999;
+        overflow: hidden;
+        margin-bottom: 36px;
+    }
+
+    #banner img {
+        height: 85%;
+        background: url(../picture/Physician_Trends_2021_Merritt_Hawkins\ 1.png);
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    }
+
+    #banner .background .content {
+        text-align: center;
+        top: 20%;
+    }
+
+    #appointment {
+        display: none;
+    }
+
+    #services {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #services .title {
+        height: 484px;
+        text-align: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px;
+        border: none;
+    }
+
+    #services .title div {
+        border-radius: 5px;
+    }
+
+    #services .content-title {
+        display: none;
+    }
+
+    #services .picture img {
+        display: none;
+    }
+
+    #special {
+        display: none;
+    }
+
+    #book .container {
+        flex-wrap: wrap;
+        font-size: 18px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(30%);
+    }
+
+    #book img {
+        height: 50vh;
+    }
+
+    #book .container .grid-container {
+        display: none;
+    }
+
+    #doctor .item {
+        transform: translateX(-90%);
+    }
+
+    #doctor .content {
+        overflow: hidden;
+    }
+
+    #doctor .item:first-child,
+    #doctor .item:last-child {
+        opacity: .3;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    #footer {
+        padding: 0 10%;
+    }
+
+    #footer .top div:first-child {
+        padding-bottom: 36px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        color: white;
+    }
+
+    #footer .top div:last-child {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        color: white;
+    }
+
+    #footer .top>div:nth-child(2) {
+        display: none;
+    }
+
+    #footer .top input {
+        width: 200px;
+        height: 35px;
+        border-radius: 5px;
+        background-color: var(--accent-color);
+    }
+
+    body>img {
+        width: 100%;
+    }
+
+}
