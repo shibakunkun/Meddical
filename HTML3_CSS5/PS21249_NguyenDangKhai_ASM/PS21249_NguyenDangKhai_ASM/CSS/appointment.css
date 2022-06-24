@@ -1,22 +1,25 @@
 #appointment-container {
     display: flex;
     padding: 0 15%;
+    justify-content: space-between;
 }
-#appointment-container .book-title{
+
+#appointment-container .book-title {
     font-family: 'Yeseva One';
-    font-size: 44px; 
+    font-size: 44px;
     color: var(--primary-color);
     line-height: 37px;
 }
-#appointment-container .book-content{
-    font-family: 'Work Sans',sans-serif; 
+
+#appointment-container .book-content {
+    font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     padding: 28px 0;
 }
 
 
 
-#appointment-container .book{
+#appointment-container .book {
     width: 45%;
 }
 
@@ -36,6 +39,7 @@
     color: white;
     text-align: left;
 }
+
 #appointment-container .message {
     grid-column: 1/3;
     height: 200px;
@@ -48,4 +52,37 @@
     text-align: center;
     height: 20px;
     line-height: 20px;
+}
+
+#appointment-container>.time {
+    width: 45%;
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+#appointment-container>.time .title {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 55px;
+    color: var(--accent-color);
+    text-align: center;
+    margin: 48px 0;
+}
+
+#appointment-container>.time .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#appointment-container>.time .container li {
+    list-style: none;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    padding-bottom: 24px;
+    color: white;
 }
