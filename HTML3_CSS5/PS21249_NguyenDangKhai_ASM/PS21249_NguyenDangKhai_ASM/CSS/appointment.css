@@ -38,6 +38,8 @@
     background-color: var(--primary-color);
     color: white;
     text-align: left;
+    border-radius: 5px;
+
 }
 
 #appointment-container .message {
