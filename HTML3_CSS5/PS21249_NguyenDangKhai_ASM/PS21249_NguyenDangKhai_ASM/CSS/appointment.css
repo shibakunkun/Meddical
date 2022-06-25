@@ -88,3 +88,15 @@
     padding-bottom: 24px;
     color: white;
 }
+@media only screen and (max-width: 768px){
+    #appointment-container{
+        flex-wrap: wrap;
+    }
+    #appointment-container .book{
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    #appointment-container > .time{
+        width: 100%;
+    }
+}
