@@ -625,5 +625,7 @@ a {
     body>img {
         width: 100%;
     }
-
+    .header-bot ul a::after{
+        display: none;
+    }
 }
